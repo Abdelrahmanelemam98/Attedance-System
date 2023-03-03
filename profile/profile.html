@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    />
+    <link
+      href="assets/plugins/global/plugins.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- link chart js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+  </head>
+
+  <body>
+    <div
+      class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column"
+      id="sidebar"
+    >
+      <ul class="nav flex-column text-white w-100">
+        <a href="#" class="nav-link h3 text-white my-2"> DashBoard </a>
+        <h6 class="m-2">Main</h6>
+        <li href="#" class="nav-link h6">
+          <i class="las la-tachometer-alt"></i>
+          <span id="admin-dashboard" class="mx-2"
+            ><a href="">DashBoard Admin</a></span
+          >
+        </li>
+        <li href="#" class="nav-link">
+          <i class="bx bx-user-check"></i>
+          <span id="profile-dash" class="mx-2"
+            ><a href="">Employee Dashboard</a></span
+          >
+        </li>
+        <li href="#" class="nav-link">
+          <i class="bx bx-conversation"></i>
+          <span class="mx-2">Profile</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="my-container active-cont">
+      <nav class="navbar top-navbar navbar-light px-5" id="menu">
+        <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+        <img class="log-img" src="./1.jpg" alt="" />
+      </nav>
+      <div class="logout">
+        <ul>
+          <li><a href="../Login/index.html">log out</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="row main">
+          <div class="profile-info d-block d-md-flex col-12 col-md-12">
+            <div class="emp-img col-12 col-md-6">
+              <img class="img" src="2.png" alt="" />
+              <h2 class="col-12">welcome</h2>
+              <p id="concat"></p>
+            </div>
+            <div class="desc col-12 col-md-12">
+              <p class="col-12">First Name :- <span id="firstName"></span></p>
+              <p class="col-12">Last Name :- <span id="lastName"></span></p>
+              <p class="col-12">Age :- <span id="age"></span></p>
+              <p class="col-12">Email :- <span id="email"></span></p>
+              <p class="col-12">Address :- <span id="address"></span></p>
+              <p class="col-12">Role :- <span id="role"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- table for employee  -->
+
+      <div class="table-container col-12 col-md-8 col-lg-12">
+        <table
+          id="attend-table"
+          class="table table-striped col-4 col-md-8 col-lg-12 w-col-4"
+          style="width: 100%"
+        >
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Time</th>
+              <th>Date</th>
+              <th>Late</th>
+              <th>Early</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <!-- ----------------------------------------- -->
+      <!-- button to top -->
+      <div class="btn-top">
+        <button>Up</button>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/profile.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

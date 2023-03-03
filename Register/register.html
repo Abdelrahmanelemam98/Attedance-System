@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/register.css" />
+    <link rel="stylesheet" href="./css/register.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
+    <title>Register</title>
+  </head>
+
+  <body>
+    <div>
+      <div class="background-container"></div>
+      <div class="col-10 offset-1 col-md-4 offset-md-4 main-wrapper">
+        <div class="sub-wrapper">
+          <div class="text-center register-head">
+            <h3>Register</h3>
+            <p>Access to our dashboard</p>
+          </div>
+          <div class="text-center">
+            <form class="form" action="">
+              <div
+                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 input-wrapper"
+              >
+                <label class="labels mt-3 mb-2"
+                  >First name <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control input first"
+                  id="validationCustom01"
+                  max="100"
+                  min="1"
+                  name="firstName"
+                  required
+                />
+                <small class="requir">Please, Enter a First Name</small>
+              </div>
+              <div
+                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 input-wrapper"
+              >
+                <label class="labels mt-2 mb-2"
+                  >Last name<span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control input last"
+                  name="LastName"
+                  required
+                />
+                <small class="requir">Please, Enter a vaild Last Name</small>
+              </div>
+              <div
+                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 input-wrapper"
+              >
+                <label class="labels mt-2 mb-2 age"
+                  >Age<span class="text-danger">*</span></label
+                >
+                <input
+                  type="number"
+                  min="20"
+                  max="60"
+                  class="form-control input"
+                  id="age"
+                  name="age"
+                  required
+                />
+                <small class="requir">Please, Enter a vaild Age</small>
+              </div>
+              <div
+                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 input-wrapper"
+              >
+                <label class="labels mt-2 mb-2"
+                  >Email<span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control input email"
+                  name="email"
+                  required
+                />
+                <small class="requir">Please, Enter a vaild Email</small>
+              </div>
+              <div
+                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 input-wrapper"
+              >
+                <label class="labels mt-2 mb-2"
+                  >Address<span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control input"
+                  id="address"
+                  name="address"
+                  required
+                />
+                <small class="requir">Please, Enter a vaild Address</small>
+              </div>
+              <div
+                class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 input-wrapper button"
+              >
+                <button type="submit" class="butt">Register</button>
+              </div>
+            </form>
+            <div
+              class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 text-center input-wrapper register-footer"
+            >
+              <p>
+                Already have account? <a href="../Login/index.html">Login</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/register.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

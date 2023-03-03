@@ -1,0 +1,113 @@
+:root{
+    --bgColor:#F7F7F7;
+    --fontColor:rgb(136, 136, 136);
+    --headColor:rgb(31, 31, 31);
+    --mainwrapperColor:#ffffff;
+    --buttonFontColor:#ffffff;
+    --iconColor:red;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    width: 100vw;
+    height: 100vh;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+  }
+  
+  .background-container {
+    background-color:var(--bgColor);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+  }
+  .main-wrapper {
+    background-color: var(--mainwrapperColor);
+    border: 1px solid var(--bgColor);
+    position: fixed;
+    top: 10%;
+  }
+  .register-head {
+    padding: .5rem;
+  }
+  .register-head h3{
+    font-family: CircularStd, sans-serif;
+    color: var(--headColor);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  .register-head p{
+    font-size: 1rem;
+    color:var(--fontColor);
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+  .sub-wrapper{
+    padding: 1rem;
+  }
+  .labels {
+    display: block;
+    width: 100%;
+    font-family: CircularStd, sans-serif;
+    font-size:1rem;
+    font-weight:600;
+  }
+  .butt{
+    width: 100%;
+    margin: 1.5rem 0;
+    border: none;
+    padding: 1rem;
+    font-size:1.2rem;
+    font-weight: 700;
+    font-family: CircularStd, sans-serif;
+    background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+    color: var(--buttonFontColor);
+  }
+  .input-wrapper {
+    text-align: start;
+    width: 100%;
+  }
+.icon{
+    position: absolute;
+    right: 3.8rem;
+    margin-top: -1.8rem;
+    text-align: center;
+  }
+  .register-footer p{
+    font-size: 1rem;
+    color: var(--headColor);
+    font-weight: 600;
+    font-family: CircularStd, sans-serif;
+  }
+  .register-footer p>a{
+    text-decoration: none;
+  }
+  .requir {
+    font-weight: 500;
+    font-family: CircularStd, sans-serif;
+    color: var(--iconColor);
+    display: none;
+    margin-top: .2rem;
+  }
+  .requir-email{
+    font-weight: 500;
+    font-family: CircularStd, sans-serif;
+    color: var(--iconColor);
+    display: none;
+    margin-top: .2rem;
+  }
+.requir-pass{
+  font-weight: 500;
+  font-family: CircularStd, sans-serif;
+  color: var(--iconColor);
+  display: none;
+  margin-top: .2rem;
+}

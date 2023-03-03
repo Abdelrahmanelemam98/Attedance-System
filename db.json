@@ -1,0 +1,180 @@
+{
+  "employee": [
+    {
+      "firstName": "Abdelrahman",
+      "lastName": "Emam",
+      "age": "26",
+      "email": "abdelrahmanemam@example.com",
+      "address": "Tanta",
+      "role": "admin",
+      "username": "Abde@OBEV",
+      "password": "NUg!TdGfR60FO",
+      "id": 1
+    },
+    {
+      "firstName": "Ahmed",
+      "lastName": "Emam",
+      "age": "35",
+      "email": "ahmedemam@example.com",
+      "address": "Cairo,Giza",
+      "role": "admin",
+      "username": "AhmeJAWRR",
+      "password": "!6dhouiXwuxHS",
+      "id": 2
+    },
+    {
+      "firstName": "Fares",
+      "lastName": "Mohamed",
+      "age": "27",
+      "email": "faresmohamed@example.com",
+      "address": "Tanta",
+      "role": "employee",
+      "username": "Fare86@DM",
+      "password": "_f_!oluDV-jUe",
+      "id": 4
+    },
+    {
+      "firstName": "Samir",
+      "lastName": "Zakaria",
+      "age": "27",
+      "email": "samirzakaria@example.com",
+      "address": "Tanta",
+      "role": "employee",
+      "username": "SamiFQQ3B",
+      "password": "fDE0YjtaYON!c",
+      "id": 5
+    },
+    {
+      "firstName": "Amged",
+      "lastName": "Mohamed",
+      "age": "26",
+      "email": "amgedmohamed@example.com",
+      "address": "Tanta",
+      "role": "security",
+      "username": "Amge_N@NX",
+      "password": "v5giUB9SRMIw$",
+      "id": 8
+    },
+    {
+      "firstName": "Mohamed",
+      "lastName": "koor",
+      "age": "35",
+      "email": "mohamedkoor@example.com",
+      "address": "Cairo,Giza",
+      "role": "employee",
+      "username": "Moha_7I9A",
+      "password": "s7pkK0$8Qol6r",
+      "id": 9
+    },
+    {
+      "firstName": "Ahmed",
+      "lastName": "Ragab",
+      "age": "26",
+      "email": "ahmedragab@example.com",
+      "address": "Cairo,Giza",
+      "role": "employee",
+      "username": "AhmeJ17!C",
+      "password": "_diwAXSGmNrsZ",
+      "id": 10
+    },
+    {
+      "firstName": "Ahmed",
+      "lastName": "samir",
+      "age": "27",
+      "email": "ahmedsamir@example.com",
+      "address": "Tanta",
+      "role": "employee",
+      "username": "Ahme8J9H5",
+      "password": "I31PPqc0umL0C",
+      "id": 11
+    }
+  ],
+  "pending": [
+    {
+      "firstName": "Mohamed",
+      "lastName": "samir",
+      "age": "26",
+      "email": "mohamedsamir@example.com",
+      "address": "Tanta",
+      "role": "",
+      "username": "MohaNKS9J",
+      "password": "aWu2akiEpwXWV",
+      "id": 1
+    },
+    {
+      "firstName": "Mostafa",
+      "lastName": "Samir",
+      "age": "35",
+      "email": "mostafasamir@example.com",
+      "address": "Tanta",
+      "role": "",
+      "username": "MostP!LQB",
+      "password": "iC8uDpl7navZv",
+      "id": 3
+    },
+    {
+      "firstName": "Amr",
+      "lastName": "Ahmed",
+      "age": "27",
+      "email": "amrahmed@example.com",
+      "address": "Tanta",
+      "role": "",
+      "username": "AmrOCO0K",
+      "password": "PcvPl7klp8oCu",
+      "id": 4
+    },
+    {
+      "firstName": "Ahmed",
+      "lastName": "Emam",
+      "age": "34",
+      "email": "ahmedemam@example.com",
+      "address": "Cairo,Giza",
+      "role": "",
+      "username": "AhmeJYHW1",
+      "password": "YIELW294IsElz",
+      "id": 5
+    },
+    {
+      "firstName": "Ahmed",
+      "lastName": "Emam",
+      "age": "34",
+      "email": "ahmedemam@example.com",
+      "address": "Cairo,Giza",
+      "role": "",
+      "username": "AhmeQ!HR5",
+      "password": "vRoLzCSPR95Lb",
+      "id": 6
+    }
+  ],
+  "Attendance": [
+    {
+      "name": "Abde@HPTH",
+      "time": "20:42",
+      "date": "2023-01-24",
+      "late": 1,
+      "early": 1,
+      "permission": 0,
+      "id": 1,
+      "leaving": "23:20"
+    },
+    {
+      "name": "yamaC_SCD",
+      "time": "22:18",
+      "date": "2023-01-24",
+      "late": 1,
+      "early": 1,
+      "permission": 0,
+      "id": 2,
+      "leaving": ""
+    },
+    {
+      "name": "Amge_N@NX",
+      "time": "23:19",
+      "date": "2023-1-25",
+      "late": 1,
+      "early": 1,
+      "permission": 0,
+      "id": 3
+    }
+  ]
+}

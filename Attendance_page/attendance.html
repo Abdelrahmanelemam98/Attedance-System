@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/attendance.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
+    <title>Attendance</title>
+  </head>
+  <body>
+    <div class="mainwrapper">
+      <div class="log-out">
+        <button>
+          <a href="../Login/index.html"
+            ><i class="fa-solid fa-arrow-right-from-bracket"></i
+          ></a>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row text-center attend">
+          <div class="content col-12 col-md-8 col-lg-8">
+            <h1 class="mt-5 mb-5">Attendance Page</h1>
+            <input type="text" id="empName" placeholder="Enter Name" />
+            <button class="btn mr-5 mt-md-0 mt-3 btn-1 text-light">
+              Confirm
+            </button>
+          </div>
+        </div>
+        <div class="table col-12 col-md-8 col-lg-8 w-30">
+          <table>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Time</th>
+              <th scope="col">Date</th>
+              <th scope="col">Leave</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/attendance.js"></script>
+  </body>
+</html>

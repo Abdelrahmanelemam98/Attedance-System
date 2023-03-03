@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div>
+        <div class="background-container"></div>
+        <div class="col-10 offset-1 col-md-4 offset-md-4 main-wrapper">
+
+            <div class="sub-wrapper">
+                <div class="text-center register-head">
+                    <h3>Login</h3>
+                    <p>Access to our dashboard</p>
+                </div>
+                <div class="text-center">
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 input-wrapper">
+                        <form class="form" action="" >
+                        <label class="labels mt-2 mb-2">Username</label>
+                        <input type="text" class="form-control email" name="email"  placeholder="Enter your username" required>
+                        <small class="requir">Please, Enter a vaild Email</small>
+                       
+                    </div>
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 input-wrapper">
+                        <label class="labels mt-2 mb-2">Password</label>
+                        <input type="password" class="form-control input pass" placeholder="Enter your password"  name="password"  />
+                        <span class="icon" ><i class="fa-solid fa-eye-slash icon-1"></i></span>
+                        <small class="requir">Please, Enter a vaild password</small>
+                    </div>
+                    <div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 input-wrapper button">
+                        <input type="submit" value="Login" class="butt">
+                    </div>
+                </form>
+                    <div
+                        class="col-10 offset-1 col-md-8 offset-md-2 col-lg-10 offset-lg-1 text-center input-wrapper register-footer">
+                        <p>
+                            Already have account? <a href="../Register/register.html">Register</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src= "./js/main.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

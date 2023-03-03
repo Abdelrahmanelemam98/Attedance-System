@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.side-navbar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  margin-left: -300px;
+  background-color: #34444c;
+  transition: 0.5s;
+}
+.nav-link {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+.nav-link i {
+  font-size: 1.5rem;
+}
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+  color: #ffff;
+}
+.navbar img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.logout {
+  position: absolute;
+  right: 2rem;
+  width: 10rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #f1f1f1;
+  transition: 0.4s ease-in-out;
+  display: none;
+}
+.active {
+  display: block;
+}
+.logout ul li {
+  list-style: none;
+}
+.logout a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.my-container {
+  transition: 0.4s;
+}
+
+.active-nav {
+  margin-left: 0;
+}
+
+/* for main section */
+.active-cont {
+  margin-left: 250px;
+}
+#menu {
+  background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+}
+#menu-btn {
+  background-color: #34444c;
+  color: #fff;
+  margin-left: -62px;
+}
+
+.my-container input {
+  border-radius: 2rem;
+  padding: 2px 20px;
+}
+#admin-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Circular Std", sans-serif;
+}
+#dash {
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Circular Std", sans-serif;
+  color: rgb(108, 117, 125);
+}
+#admin-dashboard a,
+#profile-dash a {
+  text-decoration: none;
+  color: #f1f1f1;
+  cursor: not-allowed;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+/* chart line */
+/* table for pending */
+.table-container {
+  margin-top: 8rem;
+  /* margin-left: 0.5rem; */
+  width: 100%;
+}
+
+.table-container tr {
+  color: #333;
+}
+.table-container th {
+  background-color: #ff9b44;
+  color: #f1f1f1;
+}
+
+.table-title {
+  /* text-align: center; */
+  font-weight: bold;
+  font-size: 6rem;
+  font-family: "Circular Std", sans-serif;
+  margin: 5rem 1rem;
+}
+.table-container {
+  width: 80%;
+  overflow-x: scroll;
+  margin: 1.25rem auto;
+  padding: 2rem;
+}
+/* profile */
+
+.profile-info {
+  width: 50%;
+  height: 80%;
+  padding: 5rem;
+  margin: 5rem;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+}
+.emp-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-right: 3rem;
+  text-align: center;
+}
+.emp-img .img {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 1rem;
+}
+.emp-img h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+.desc {
+  margin-left: -1rem;
+  font-weight: bold;
+}
+
+.btn-top {
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+}
+.btn-top button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff9b44 0%, #fc6075 100%);
+  color: #fff;
+}

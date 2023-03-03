@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    />
+    <link
+      href="assets/plugins/global/plugins.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    </script>
+    <script src="./js/email.min.js"></script>
+    <script>(function(){emailjs.init("HVH2mu7vztGZKt6ui");})();</script>
+    <!-- link chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/admin.css" />
+ 
+  </head>
+  <body>
+    <div
+      class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column"
+      id="sidebar"
+    >
+      <ul class="nav flex-column text-white w-100">
+        <a href="#" class="nav-link h3 text-white my-2"> DashBoard </a>
+        <h6 class="m-2">Main</h6>
+        <li href="#" class="nav-link h6">
+          <i class="las la-tachometer-alt"></i>
+          <span class="mx-2">Dashboard</span>
+        </li>
+        <li href="#" class="nav-link">
+          <i class="bx bx-user-check"></i>
+          <span id="emp-dashboard" class="mx-2"><a href="../employee/employee.html">Employee Dashboard</a></span>
+        </li>
+        <li href="#" class="nav-link">
+          <i class="bx bx-conversation"></i>
+          <span id="profile-dash" class="mx-2"><a href="">Profile</a> </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class=" my-container active-cont">
+      <nav class="navbar top-navbar navbar-light px-5" id="menu">
+        <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+        <img class="log-img" src="../profile/1.jpg" alt="" />
+      </nav>
+      <div class="logout">
+        <ul>
+          <li><a href="../Login/index.html">log out</a></li>
+        </ul>
+      </div>
+
+      <h3 class="text-dark p-3 col-12" id="admin-text">Welcome Admin !</h3>
+      <h6 id="dash">Dashboard</h6>
+
+      <div class="content container-fluid">
+        <div class="page-header ">
+          <div class="row">
+            <div class="col-md-6 col-12 mb-2 mb-md-0 col-lg-6 col-xl-3">
+              <div class="card dash-widget">
+                <div class="card-body">
+                  <span class="dash-widget-icon">
+                    <i class="las la-cubes"></i>
+                  </span>
+                  <div class="dash-widget-info">
+                    <h3>112</h3>
+                    <span>Project</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12 mb-2 mb-md-0 col-lg-6 col-xl-3">
+              <div class="card dash-widget">
+                <div class="card-body">
+                  <span class="dash-widget-icon">
+                    <i class="las la-cubes"></i>
+                  </span>
+                  <div class="dash-widget-info">
+                    <h3>44</h3>
+                    <span>Client</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12 mb-2 mb-md-0 col-lg-6 col-xl-3 ">
+              <div class="card dash-widget">
+                <div class="card-body">
+                  <span class="dash-widget-icon">
+                    <i class="las la-cubes"></i>
+                  </span>
+                  <div class="dash-widget-info">
+                    <h3>37</h3>
+                    <span>Tasks</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12 mb-2 mb-md-0 col-lg-6 col-xl-3 mt-col-3">
+              <div class="card dash-widget">
+                <div class="card-body">
+                  <span class="dash-widget-icon">
+                    <i class="las la-cubes"></i>
+                  </span>
+                  <div class="dash-widget-info">
+                    <h3>218</h3>
+                    <span>Employees</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--start chart  -->
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <div class="row">
+                <div id="box" class="col-md-8 col-lg-6 col-12  text-center">
+                  <div class="card">
+                    <div class="card-body">
+                      <h3>Total Present and Absent in Month</h3>
+                    </div>
+                    <div style="max-width: 568px">
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-expand">
+                          <div clas></div>
+                        </div>
+                        <div class="chartjs-size-shrink col-12">
+                          <div class></div>
+                        </div>
+                      </div>
+                      <div
+                      
+                        id="Container"
+                        style="height: 370px; width: 80%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <!--circle chart  -->
+                <div id="box" class="col-md-6 col-lg-6 col-12 text-center">
+                  <div class="card ">
+                    <div class="card-body">
+                      <h3>Total Present and Absent in Week</h3>
+                    </div>
+                    <div style="max-width: 568px">
+                      <div class="chartjs-size-monitor">
+                        <div class="chartjs-size-expand">
+                          <div clas></div>
+                        </div>
+                        <div class="chartjs-size-shrink">
+                          <div class></div>
+                        </div>
+                      </div>
+                      <canvas
+                        id="myChart"
+                        style="width: 100%; height: 350px; max-width: 600px"
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!-- end line chart -->
+
+                <!-- table pending  -->
+                <div class="table-title">
+                  <h2>Pending Table</h2>
+                </div>
+                <div class="table-container col-12 col-md-8 col-lg-12  ">
+                  <table
+                    id="pending-table"
+                    class="table table-striped col-4 col-md-8 col-lg-12 w-col-4 "
+                    style="width: 100%"
+                  >
+                    <thead>
+                      <tr>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>UserName</th>
+                        <th>Role</th>
+                        <th>Approve</th>
+                        <th>Disapprove</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                  </table>
+                </div>
+                <!-- ----------------------------------------- -->
+              </div>
+            </div>
+          </div>
+          <div class="table-title">
+            <h2>Employee Table</h2>
+          </div>
+          <div class="row">
+            <div class="table-container col-12 col-md-8 col-lg-12">
+              <table
+                id="table-employee"
+                class="table table-striped"
+                style="width: 100%"
+              >
+                <thead>
+                  <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Role</th>
+                   
+                  </tr>
+                  <tbody>
+
+                  </tbody>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-top">
+        <button>Up</button>
+      </div>
+    </div>
+   
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/admin.js"></script>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </body>
+</html>
